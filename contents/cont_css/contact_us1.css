@@ -10,70 +10,71 @@ html{
 	height:100%;
 }
 body{
-	background-color: #ffff00;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
-  	background-attachment: fixed;
-	background-size: cover;
+  margin:0;
+  padding:0;
 }
 .container{
 	position:relative;
 	display:flex;
     justify-content: center;
     align-items: center;
+	height: 100vh;
+	background-color: #ffff00;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
 	
 }
 .container form.contact_us-1{
-	margin-top: 10%;
 	background-color: white;
 	width:35%;
 	display:block;
     justify-content:center;
     align-items: center;
-	border-radius: 1.5rem;
-	
-		
+	border-radius: 1.5rem;	
 }
 .container form.contact_us-1 .form-header{
-	margin-left: 150px;
-	margin-top: 20px;
-
+	text-align: center;
 }
 .container form.contact_us-1 .form-group-items{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	display:block;
 }
-
-
+.container form.contact_us-1 .form-group-items .form-input-group{
+	display:flex;
+	justify-content: center;
+}
 .container form.contact_us-1 .form-group-items input,
 .container form.contact_us-1 .form-group-items textarea{
 	border:none;
 	border-bottom: 2px solid gray;
 	font-family:'Quicksand', sans-serif;
-	font-size: medium;
+	font-size: 1.1rem;
 	outline: none;
 }
+
 .container form.contact_us-1 .form-group-items input{
 	margin-bottom:10px;
 	height: 40px;
-	width:450px;
+	min-width:90%;
 	
 }
 .container form.contact_us-1 .form-group-items textarea{
 	height:100px ;
-	width:450px;
+	width:90%;
 	margin-bottom:10px;
 	
+}.container form.contact_us-1 .form-group-items button:hover{
+	cursor: pointer;
 }
 .container form.contact_us-1 .form-group-items button{
 	height: 40px;
-	width:300px;
+	width:80%;
 	border: none;
 	border-radius: 3.5rem;
 	background-image:linear-gradient(45deg,var(--back_color-primary),var(--back_color-second),var(--back_color-third));
 	font-family:'Quicksand', sans-serif;
-	margin:0 0 3rem 2rem;
+	margin: 5% 0 ;
 	font-size:1.1rem;;
 	color:white;
 	display: flex;
@@ -82,12 +83,27 @@ body{
 }
 .container form.contact_us-1 .form-group-items input:hover,
 .container form.contact_us-1 .form-group-items textarea:hover{
+	transition:0.5s ease-in-out;
 	border:none;
-	border-bottom:2px solid #833ab4;
+	border-bottom:2px solid var(--back_color-second);
 }
 
 .container form.contact_us-1 .form-group-items .button_arrow{
 	margin-top: 3px;
 	margin-left:5px;
 	font-size: 1.3rem;
+}
+
+/*  Contact Us-1 Responsive  */
+
+
+/* MOBILE */
+
+@media screen and (max-width:480px) {
+	 :root{
+		 font-size:10px;
+	 }
+	 .container form.contact_us-1{
+		 width:50vh;
+	 }
 }
