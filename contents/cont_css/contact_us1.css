@@ -54,21 +54,22 @@ body{
 }
 
 .container form.contact_us-1 .form-group-items input{
-	margin-bottom:10px;
-	height: 40px;
+	margin-bottom:0.9rem;
+	height: 2.6rem;
 	min-width:90%;
+	
 	
 }
 .container form.contact_us-1 .form-group-items textarea{
-	height:100px ;
+	height:6.25rem ;
 	width:90%;
-	margin-bottom:10px;
+	margin-bottom:0.625rem;
 	
 }.container form.contact_us-1 .form-group-items button:hover{
 	cursor: pointer;
 }
 .container form.contact_us-1 .form-group-items button{
-	height: 40px;
+	height: 2.5rem;
 	width:80%;
 	border: none;
 	border-radius: 3.5rem;
@@ -89,8 +90,8 @@ body{
 }
 
 .container form.contact_us-1 .form-group-items .button_arrow{
-	margin-top: 3px;
-	margin-left:5px;
+	margin-top: 0.1875rem;
+	margin-left:0.3125rem;
 	font-size: 1.3rem;
 }
 
@@ -99,11 +100,49 @@ body{
 
 /* MOBILE */
 
-@media screen and (max-width:480px) {
+@media  screen and (min-width:360px) and (max-width:480px) {
 	 :root{
-		 font-size:10px;
+		 font-size: 10px;
 	 }
 	 .container form.contact_us-1{
-		 width:50vh;
+		 width:60%;
+		 
+	 }
+	 .container form.contact_us-1 .form-group-items input{
+		 height:1rem;
+		 
 	 }
 }
+@media screen and (min-width:481px) and (max-width:767px){
+	:root{
+		font-size: 13px;
+	}
+	.container form.contact_us-1{
+		width:60%;	
+	}
+	.container form.contact_us-1 .form-group-items input{
+		margin-top: 1rem;
+		height:2rem;
+		
+	}
+	.container form.contact_us-1 .form-group-items textarea{
+		height:8rem;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+	:root{
+		font-size: 15px;
+	}
+	.container form.contact_us-1{
+		width:60%;	
+	}
+	.container form.contact_us-1 .form-group-items input{
+		height:2.rem;
+	}
+	.container form.contact_us-1 .form-group-items textarea{
+		height:8rem;
+
+	}
+}
+
