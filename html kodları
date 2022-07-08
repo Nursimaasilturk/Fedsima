@@ -1,0 +1,180 @@
+/*
+hareketli border
+.container .main-navbar .navbar__logo--active-border{
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color:#4CC3FF;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 24px;
+	overflow:hidden;
+	transition:0.2s;
+}
+
+.container .main-navbar .navbar__logo--active-border:hover{
+	color:#7C64D5;
+	background-color: #4CC3FF;
+	box-shadow: 0 0 10px #4CC3FF,
+				0 0 40px #4CC3FF,
+				0 0 80px #4CC3FF;
+	transition-delay:1s ;		
+
+}
+.container .main-navbar .navbar__logo--active-border span{
+	position:absolute;
+	display: block;
+}
+.container .main-navbar .navbar__logo--active-border span:nth-child(1){
+	top:0;
+	left:-100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,var(--third-color));
+
+}
+.container .main-navbar .navbar__logo--active-border:hover span:nth-child(1){
+	left: 100%;
+	transition: 1s;
+}
+.container .main-navbar .navbar__logo--active-border span:nth-child(3){
+	bottom:0;
+	right:-100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,var(--third-color));
+
+}
+.container .main-navbar .navbar__logo--active-border:hover span:nth-child(3){
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+.container .main-navbar .navbar__logo--active-border span:nth-child(2){
+	top:-100%;
+	right:0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,var(--third-color));
+
+}
+.container .main-navbar .navbar__logo--active-border:hover span:nth-child(2){
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+.container .main-navbar .navbar__logo--active-border span:nth-child(4){
+	bottom:-100%;
+	left:0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,var(--third-color));
+
+}
+.container .main-navbar .navbar__logo--active-border:hover span:nth-child(4){
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+}
+-----------------------------
+loading işareti
+.container .main-navbar .main-navbar__logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation:animateBg 10s linear infinite;
+}
+@keyframes animateBg{
+	0%{
+		filter:hue-rotate(0deg);
+	}
+	100%{
+		filter:hue-rotate(360deg);
+	}
+
+}
+.container .main-navbar .main-navbar__logo .navbar__logo--active-border{
+	position:relative;
+	width: 120px;
+	height: 120px;
+}
+.container .main-navbar .main-navbar__logo .navbar__logo--active-border span{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 90%;
+	height: 90%; 
+	transform: rotateY(calc(10px  * var(--i)));
+}
+.container .main-navbar .main-navbar__logo .navbar__logo--active-border span::before{
+	content:'';
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: var(--third-color);
+	box-shadow: 0 0 10px var(--third-color),
+				0 0 20px var(--third-color),
+				0 0 40px var(--third-color), 
+				0 0 60px var(--third-color), 
+				0 0 80px var(--third-color), 
+				0 0 100px var(--third-color); 
+	animation: animate 2s linear infinite;
+	animation-delay:calc(0.1s * var(--i)) ;
+}
+@keyframes animate{
+	0%{
+		transform: scale(1);
+	}
+	80%,100%{
+		transform: scale(0);
+	}
+}
+----------------
+su haraeketli logo
+.container .home-header .header-logo h1{
+	color: #fff;
+	font-size: 2em;
+	position: absolute;
+	letter-spacing: 0.2rem;
+	transform: translate(50%,-75%);
+}
+.container .home-header .header-logo h1:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke:2px #FF057C;
+}
+.container .home-header .header-logo h1:nth-child(2){
+	color:aqua;
+	animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate{
+	0%,100%{
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
