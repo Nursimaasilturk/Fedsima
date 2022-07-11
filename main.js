@@ -1,4 +1,6 @@
 const text = document.querySelector(".second-text");
+const rightBtn = document.querySelector(".slider-buttons .slider__right-click");
+const slides = document.querySelector(".slider .slider-items");
 //const codeOne = document.querySelector("#code-one").textContent;
 const textLoad = () => {
   setTimeout(() => {
@@ -6,6 +8,7 @@ const textLoad = () => {
   }, 0);
 };
 textLoad();
+
 // var arrayCode = Array.from;
 // for (let i = 0; i < arrayCode.length; i++) {
 //   var char = arrayCode[i];

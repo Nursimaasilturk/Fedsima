@@ -173,11 +173,13 @@ main {
 }
 main .container {
   background-color: white;
-  box-sizing: border-box;
+  margin: 0;
 }
 main .container .row {
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
   width: 100%;
-  height: 50vw;
+  height: 44vw;
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
@@ -229,26 +231,33 @@ main .container .row .text-content .buttons .btn {
   cursor: pointer;
 }
 main .container .row .text-content .buttons .btn.btn1 {
-  border: 2px solid #2e47ec;
-  color: #2e47ec;
+  background-color: white;
+  border: 2px solid var(--third-color);
+  color: var(--third-color);
+}
+main .container .row .text-content .buttons .btn.btn1:hover {
+  background-color: white;
+  border: 2px solid #010718;
+  color: #010718;
+  transition: 0.5s;
 }
 main .container .row .text-content .buttons .btn.btn2 {
-  background-color: #2e47ec;
+  background-color: var(--third-color);
   color: white;
 }
 main .container .row .text-content .buttons .btn.btn2:hover {
-  background-color: white;
-  border: 2px solid #2e47ec;
-  color: #2e47ec;
+  background-color: #010718;
+  color: white;
+  transition: 0.5s;
 }
 .container .animation-content .user-icon {
   position: absolute;
   z-index: 2;
-  top: 29%;
-  left: 36%;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 3rem;
+  top: 25%;
+  left: 38%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
   border: 5px solid #010718;
   background-color: white;
   display: flex;
@@ -272,7 +281,7 @@ main .container .row .text-content .buttons .btn.btn2:hover {
 .container .animation-content .content-icon {
   position: absolute;
   z-index: 1;
-  top: 36%;
+  top: 35%;
   left: 38%;
   width: 25vw;
   height: 15vw;
@@ -285,7 +294,7 @@ main .container .row .text-content .buttons .btn.btn2:hover {
 }
 .container .animation-content .content-icon.icon2 {
   position: absolute;
-  top: 66%;
+  top: 65%;
   left: 38%;
   background-color: #a795e4;
 }
@@ -327,7 +336,7 @@ main .container .row .text-content .buttons .btn.btn2:hover {
 .container .animation-content .how-to-icon {
   z-index: 4;
   position: absolute;
-  top: 35%;
+  top: 30%;
   right: 9%;
   width: 25%;
   height: 62%;
@@ -347,7 +356,7 @@ main .container .row .text-content .buttons .btn.btn2:hover {
 }
 .container .animation-content .comment-icon {
   position: absolute;
-  top: 85%;
+  top: 78%;
   left: 30%;
   z-index: 6;
   width: 20vw;
@@ -510,6 +519,9 @@ main .container .row .text-content .buttons .btn.btn2:hover {
   width: 80%;
   height: 40%;
   background-color: aqua;
+}
+main .templates {
+  margin: 1rem;
 }
 main .content {
   display: flex;
@@ -986,9 +998,123 @@ input {
   cursor: pointer;
 }
 footer {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c176 C 57.6%2c148.2 172.8%2c24.8 288%2c37 C 403.2%2c49.2 460.8%2c225.2 576%2c237 C 691.2%2c248.8 748.8%2c114.6 864%2c96 C 979.2%2c77.4 1036.8%2c150 1152%2c144 C 1267.2%2c138 1382.4%2c81.6 1440%2c66L1440 560L0 560z' fill='rgba(1%2c 7%2c 24%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c343 C 96%2c371.4 288%2c489.2 480%2c485 C 672%2c480.8 768%2c322.8 960%2c322 C 1152%2c321.2 1344%2c449.2 1440%2c481L1440 560L0 560z' fill='rgba(76%2c 195%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-  background-position: center;
-  width: 95%;
-  height: 70vh;
-  margin: 2rem auto auto auto;
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  align-items: center;
+}
+footer .main-footer {
+  width: 80%;
+  height: 80%;
+  background-color: #010718;
+  border-radius: 0 50px 50px 0;
+  display: flex;
+}
+footer .main-footer .company-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+footer .main-footer .company-info .company-logo {
+  color: #7c64d5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 20%;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+footer .main-footer .company-info .company-information {
+  margin: auto 1rem;
+  font-weight: 200;
+  height: 20%;
+  color: var(--third-color);
+}
+footer .main-footer .company-info .social-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+}
+footer .main-footer .company-info .social-media i {
+  color: var(--third-color);
+}
+footer .main-footer .company-info .contact-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .main-footer .company-info .contact-info .icon {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 30%;
+  font-weight: 200;
+}
+footer .main-footer .content-info {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .main-footer .content-info .content-item {
+  font-size: 0.5rem;
+  width: 20%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--third-color);
+}
+footer .main-footer .content-info .content-item p {
+  margin: 0;
+  color: white;
+}
+footer .get-started-icon {
+  position: absolute;
+  right: 3%;
+  bottom: 20%;
+  width: 60%;
+  height: 20%;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #179eff;
+}
+footer .get-started-icon .text {
+  font-size: large;
+  font-weight: 600;
+}
+footer .get-started-icon .text .sub-text {
+  font-size: small;
+  font-weight: 200;
+  color: #010718;
+}
+footer .get-started-icon .button {
+  width: 30%;
+  height: 30%;
+}
+footer .get-started-icon .button button {
+  width: 100%;
+  height: 100%;
+  background-color: var(--first-color);
+  border: none;
+  font-size: medium;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 2px solid #010718;
+}
+footer .get-started-icon .button button:hover {
+  background-color: var(--second-color);
+  color: white;
 }
