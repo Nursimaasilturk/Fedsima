@@ -4,6 +4,9 @@
   --third-color: #4cc3ff;
   --head-font-type: "Josefin Sans", sans-serif;
   --normal-font-type: "Comfortaa", cursive;
+  --sidebar-font-type: "Poppins", sans-serif;
+  font-family: "Anek Malayalam", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Montserrat Alternates", sans-serif;
   font-family: "My Soul", cursive;
@@ -997,6 +1000,7 @@ input {
   transition: 0.5s;
   cursor: pointer;
 }
+/* ------ MAIN PAGE FOOTER ------- */
 footer {
   position: relative;
   width: 100%;
@@ -1118,3 +1122,5 @@ footer .get-started-icon .button button:hover {
   background-color: var(--second-color);
   color: white;
 }
+/* ------ / MAIN PAGE FOOTER ------- */
+/* ------- SIDEBAR --------*/
